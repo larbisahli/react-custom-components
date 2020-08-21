@@ -1,7 +1,10 @@
 {
   "name": "react-custom-components",
-  "version": "0.1.0",
+  "author": "Larbi Sahli",
+  "version": "1.0.0",
+  "description": "A custom components for your react projects",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,6 +13,11 @@
   "dependencies": {
     "next": "9.5.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "babel-jest": "^26.3.0",
+    "babel-plugin-inline-react-svg": "^1.1.1"
   }
 }
