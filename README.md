@@ -1,6 +1,10 @@
 # react-custom-components
 
-Custom components for your project
+#### A custom components for your project.
+
+##### Live example: https://react-custom-components.netlify.app/
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/15f13452-3573-417b-81e2-021decf7b8f3/deploy-status)](https://app.netlify.com/sites/react-custom-components/deploys)
 
 ---
 
