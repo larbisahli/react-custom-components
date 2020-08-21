@@ -1,0 +1,42 @@
+.container {
+    margin-bottom: 50px;
+
+    .label_container {
+        display: flex;
+
+        .label_wrapper {
+            padding-bottom: 20px;
+            box-sizing: border-box;
+
+            &:hover>.label {
+                border-bottom: 1px dotted;
+            }
+
+            &:hover>.lsvg {
+                display: block;
+            }
+
+            .lsvg {
+                display: none;
+                padding-left: 3px;
+            }
+
+            .av {
+                border-bottom: 2px dotted var(--selected-color) !important;
+            }
+
+            .label {
+                font-family: Roboto-Medium;
+                font-size: 1.4em;
+                border-bottom: 1px solid transparent;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .comwrap {
+        border: 1px solid rgb(201, 200, 200);
+        border-radius: 10px;
+        height: 500px;
+    }
+}
