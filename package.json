@@ -17,14 +17,23 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "next": "9.5.2",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scroll": "^1.8.1",
+    "react-syntax-highlighter": "^13.5.1",
     "sass": "^1.26.10"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^9.5.2",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
-    "babel-plugin-inline-react-svg": "^1.1.1"
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0"
   }
 }

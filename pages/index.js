@@ -1,15 +1,16 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
-import { DropDown } from '../CustomComponents'
-import { Container } from '../AppComponents'
+import { DropDownContainer } from '../AppComponents'
+import { useState } from 'react'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
-      <Container label="DropDown"> <DropDown /></Container>
-      <Container label="Carousel"> <DropDown /></Container>
-      <Container label="Explore Carousel"> <DropDown /></Container>
-      <Container label="Tabs"> <DropDown /></Container>
-    </div>
+      <DropDownContainer />
+      {/* <Container label="Carousel"> </Container>
+      <Container label="Explore Carousel">  </Container>
+      <Container label="Tabs"> </Container> */}
+    </div >
   )
 }

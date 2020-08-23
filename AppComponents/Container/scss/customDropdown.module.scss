@@ -1,0 +1,10 @@
+.dropcontainer {}
+
+.dd-item {
+    padding: 8px 10px;
+
+
+    &:hover {
+        background-color: rgba(52, 83, 87, 0.288) !important;
+    }
+}

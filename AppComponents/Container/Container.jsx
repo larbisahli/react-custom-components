@@ -1,4 +1,4 @@
-import styles from "./container.module.scss";
+import styles from "./scss/container.module.scss";
 import LinkSvg from "../../public/svg/link.svg";
 import { GuideContext } from "../Context/GuideContext";
 import { useContext, memo } from "react";

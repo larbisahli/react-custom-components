@@ -1,0 +1,44 @@
+.container {
+
+    position: relative;
+    transition: all 0.14s linear;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    .wrap {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 2px;
+
+        .circle {
+            position: absolute;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: ripple 0.55s;
+            top: 0;
+            left: 0;
+            background: #ffffff46;
+
+        }
+
+        @keyframes ripple {
+            from {
+                transform: scale(10);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(50);
+                opacity: 0;
+            }
+        }
+    }
+}

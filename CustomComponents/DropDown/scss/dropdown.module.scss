@@ -1,0 +1,136 @@
+$radius: 4px;
+
+.container {
+    // FIXED
+    cursor: pointer;
+    position: relative;
+
+
+    .btn_wrapper {
+        // Can be modified [default]
+        background-color: #396ebe;
+        color: #fff;
+        border: 0;
+        border-radius: $radius;
+        outline: none;
+        text-shadow: 0 1px 0 #2d4f94;
+        padding: 7px 5px;
+    }
+
+    .btnwrapper {
+        // FIXED
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .txtarea {
+        // FIXED
+        flex: 1;
+        text-align: center;
+        align-self: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+    .move {
+        // Can be modified [default]
+        color: #000;
+        font-size: .8em;
+        top: -16px;
+        left: 0;
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+
+        &--up {
+            animation: moving 0.3s normal forwards ease-in-out;
+
+            @keyframes moving {
+                from {
+                    transform: translateY(10px);
+                }
+
+                to {
+                    transform: translateY(0px);
+                }
+            }
+        }
+
+        &--down {
+            animation: fade 0.3s normal forwards ease-in-out;
+
+            @keyframes fade {
+                from {
+                    transform: translateY(0px);
+                }
+
+                to {
+                    transform: translateY(10px);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .svgarea {
+        // FIXED
+        flex: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .arrowicon {
+            position: relative;
+            width: 16px;
+            transform: rotate(0deg);
+            transition: transform 0.25s ease;
+        }
+
+        .rotate {
+            transform: rotate(-180deg);
+            transition: transform 0.25s ease;
+        }
+    }
+
+    .items_container {
+        position: absolute;
+        right: 0;
+        left: 0;
+        display: none;
+        margin-top: 3px;
+        width: inherit;
+        box-sizing: border-box;
+        background-color: #fff;
+        box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.148);
+        border-radius: $radius;
+    }
+
+    .dd-show {
+        display: block;
+    }
+
+
+    .active {
+
+        background-color: #6ce0f06b;
+    }
+
+    .radius {
+        color: inherit;
+
+        &--top {
+            border-top-right-radius: $radius;
+            border-top-left-radius: $radius;
+        }
+
+        &--bottom {
+            border-bottom-right-radius: $radius;
+            border-bottom-left-radius: $radius;
+        }
+    }
+}
