@@ -1,0 +1,118 @@
+.carousel {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #f0f1f1;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 1px #2c2c2d12;
+
+    .btn_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .arrow_btn {
+
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: .8;
+            z-index: 1;
+            box-shadow: 0 8px 12px 0 #2c2c2d47, 0 0 0 1px #2c2c2d14;
+
+            &:hover {
+                background-color: rgb(240, 240, 240);
+            }
+        }
+
+        .right-side {
+            transform: rotate(-180deg);
+            left: 8px;
+
+        }
+
+        .left-side {
+            transform: rotate(0deg);
+            right: 8px;
+        }
+    }
+
+
+    .slide_container {
+        width: inherit;
+        height: inherit;
+
+        .img_container {
+            display: flex;
+            transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+            flex-flow: row nowrap;
+            box-sizing: border-box;
+            width: 100%;
+            position: relative;
+
+            .img_wrapper {
+
+                flex-grow: 0;
+                flex-shrink: 0;
+                width: 100%;
+                opacity: 1;
+                transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+
+                .img_link {
+                    color: inherit;
+                    text-decoration: none;
+                    display: block;
+                    cursor: pointer;
+
+
+                    &:visited,
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        color: inherit;
+                        text-decoration: none;
+                    }
+
+                    .img_ {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        border-radius: 4px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    .dot_container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 16px;
+        width: 100%;
+        list-style: none;
+
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            margin: 4px;
+            background: #fff;
+            border-radius: 50%;
+            opacity: .3;
+        }
+
+        .dot_active {
+            opacity: 1;
+        }
+    }
+}

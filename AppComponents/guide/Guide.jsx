@@ -19,7 +19,7 @@ const Guide = () => {
           >
             <div className={cx("header_content")}>React custom component</div>
           </div>
-          {ComponentsList.map((comp) => {
+          {ComponentsList.map((comp, index) => {
             return (
               <Link
                 to={comp}

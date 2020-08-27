@@ -6,6 +6,7 @@ import { DropDown } from "../../CustomComponents";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import dark from "react-syntax-highlighter/dist/cjs/styles/prism/vs-dark";
 import classNames from "classnames/bind";
+
 let cx = classNames.bind(styles);
 
 const DropDownContainer = () => {
@@ -21,6 +22,7 @@ const DropDownContainer = () => {
   return (
     <Container label="DropDown">
       <div className={`${styles.play_area} flexcenter`}>
+        {/* ----------------------------- */}
         <DropDown
           Value={selectedItem}
           onSelect={setSelectedItem}
@@ -40,6 +42,7 @@ const DropDownContainer = () => {
             Items
           </option>
         </DropDown>
+        {/* ----------------------------- */}
       </div>
       <div className={`${styles.code_container} flexcenter`}>
         <div className={styles.code_area}>
@@ -107,7 +110,7 @@ const DropDownContainer = () => {
             <div className={styles.inpcon}>
               <input
                 type="text"
-                spellcheck="false"
+                spellCheck={false}
                 placeholder="top text"
                 onChange={(e) => setSelectOption(e.target.value)}
                 value={selectOption}

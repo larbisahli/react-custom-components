@@ -12,7 +12,9 @@
     "export": "next export",
     "test": "jest --watch",
     "regenerate": "rm -rf .next && yarn build && yarn start",
-    "analyze": "cross-env ANALYZE=true next build"
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -29,6 +31,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
     "babel-plugin-inline-react-svg": "^1.1.1",
+    "cross-env": "^7.0.2",
     "eslint": "^7.7.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",

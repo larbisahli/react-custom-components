@@ -70,10 +70,6 @@ button {
   outline: none;
 }
 
-svg {
-  shape-rendering: crispEdges;
-  text-rendering: optimizeLegibility;
-}
 
 .line {
   height: 1px;
@@ -93,9 +89,10 @@ svg {
 
 .page_container {
   margin-left: 240px;
+  content-visibility: auto;
 
   @media screen and (max-width: 980px) {
-    margin-left: 72px;
+    margin: auto;
   }
 }
 

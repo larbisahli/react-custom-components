@@ -17,7 +17,7 @@ const DropDown = ({
   onSelect,
   width,
 }) => {
-  const [display, setDisplay] = useState(false);
+  const [display, setDisplay] = useState(null);
 
   const getNodeLengt = () => {
     if (children) return children.length;
@@ -39,8 +39,6 @@ const DropDown = ({
     setDisplay((value) => !value);
     document.addEventListener("click", CloseMenu);
   };
-
-  console.log(":>> ");
 
   const HandleHover = () => {
     setDisplay(true);

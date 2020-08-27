@@ -6,6 +6,15 @@ $radius: 4px;
     position: relative;
 
 
+
+    &:active {
+
+        &>.btn_wrapper {
+            background-color: #315fa5;
+        }
+    }
+
+
     .btn_wrapper {
         // Can be modified [default]
         background-color: #396ebe;
@@ -15,6 +24,7 @@ $radius: 4px;
         outline: none;
         text-shadow: 0 1px 0 #2d4f94;
         padding: 7px 5px;
+
     }
 
     .btnwrapper {
@@ -45,6 +55,7 @@ $radius: 4px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        opacity: 0;
 
 
         &--up {
@@ -53,10 +64,12 @@ $radius: 4px;
             @keyframes moving {
                 from {
                     transform: translateY(10px);
+                    opacity: 0;
                 }
 
                 to {
                     transform: translateY(0px);
+                    opacity: 1;
                 }
             }
         }
@@ -67,6 +80,7 @@ $radius: 4px;
             @keyframes fade {
                 from {
                     transform: translateY(0px);
+                    opacity: 1;
                 }
 
                 to {

@@ -1,5 +1,5 @@
 const ComponentsList = ["DropDown",
-    "Carousel",
+    "Custom Carousel",
     "Explore Carousel",
     "Tabs"]
 

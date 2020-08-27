@@ -7,6 +7,10 @@
     align-items: flex-start !important;
     margin: 20px;
 
+    @media screen and (max-width: 1200px) {
+        display: block;
+    }
+
     .code_area {
         flex: 3;
         overflow: hidden;
@@ -23,6 +27,10 @@
         margin: 0.5em 10px;
         height: auto;
 
+        @media screen and (max-width: 1200px) {
+            margin: auto;
+        }
+
         .headtxt {
             margin-bottom: 10px;
             font-family: Roboto-Medium;
@@ -35,6 +43,7 @@
             justify-content: space-between;
             margin-bottom: 10px;
             margin-right: 10px;
+
 
             .lltxt {
                 margin-right: 10px;
@@ -69,7 +78,7 @@
 
                     border: none;
                     font-family: Inconsolata, Monaco, Consolas, "Courier New", Courier, monospace;
-                    color: rgb(221, 160, 136);
+                    color: rgb(253, 191, 166);
                     background-color: #1e1e1e;
                     text-align: center;
                     border-radius: 4px;
